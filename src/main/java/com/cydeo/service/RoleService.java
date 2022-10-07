@@ -1,15 +1,15 @@
 package com.cydeo.service;
 
 import com.cydeo.dto.RoleDTO;
-import com.cydeo.dto.UserDTO;
 
-import java.util.List;
 
-public interface RoleService {
-
+public interface RoleService extends CrudService<RoleDTO, Long>{
+/*
     RoleDTO save(RoleDTO role);//abstract methode
     RoleDTO findById(Long id);
     List<RoleDTO> findAll();
     void deleteById(Long id);
+
+ */
 
 }
