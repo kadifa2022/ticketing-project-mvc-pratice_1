@@ -19,7 +19,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping("/create")//form for userCreate
+    @GetMapping("/create")//form for userCreate ls
     public String createUser(Model model){
         model.addAttribute("user", new UserDTO());
         model.addAttribute("roles", roleService.findAll()); //from db go to service and impl create map
@@ -48,6 +48,14 @@ public class UserController {
         model.addAttribute("users", userService.findAll());
 
             return "/user/update";
+        }
+        @PostMapping("/update")
+    public String updateUser(@ModelAttribute("user") UserDTO user){//empty form
+          //need to update user see service
+            userService.update(user);
+
+
+            return " redirect:/user/create";
         }
 
 
