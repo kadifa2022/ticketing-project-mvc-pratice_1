@@ -54,8 +54,16 @@ public class UserController {
           //need to update user see service
             userService.update(user);
 
-
             return " redirect:/user/create";
+        }
+
+        @GetMapping("/delete/{username}")
+        public String deleteUser(@PathVariable("username")String username){
+        userService.deleteById(username);
+
+        return "redirect:/user/create";
+
+
         }
 
 
