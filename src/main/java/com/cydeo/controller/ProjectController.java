@@ -33,6 +33,7 @@ public class ProjectController {
 
     @PostMapping("/create")
     public String insertProject(@ModelAttribute("project") ProjectDTO project){
+
         projectService.save(project);
 
         return "redirect:/project/create";
