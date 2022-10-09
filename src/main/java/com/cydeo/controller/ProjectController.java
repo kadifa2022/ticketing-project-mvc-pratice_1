@@ -67,7 +67,7 @@ public class ProjectController {
         //need to update user see service
         projectService.update(project);
 
-        return " redirect:/project/create";
+        return "redirect:/project/create";
     }
 
 
