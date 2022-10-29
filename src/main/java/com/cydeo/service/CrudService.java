@@ -4,7 +4,8 @@ import com.cydeo.dto.UserDTO;
 
 import java.util.List;
 
-public interface CrudService <T, ID>{//GENERICS
+public interface CrudService <T, ID>{//GENERICS-
+
 
 
     T save( T user);

@@ -73,10 +73,6 @@ private final TaskService taskService;
                     project.setUnfinishedTaskCounts(unfinishedTaskCounts);
 
 
-
-
-
-
                     return project;
 
 
