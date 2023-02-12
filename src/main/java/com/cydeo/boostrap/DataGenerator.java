@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
-@Component
+@Component  //(boostrap means initial loading data)Data generator
 public class DataGenerator implements CommandLineRunner {
 
 
