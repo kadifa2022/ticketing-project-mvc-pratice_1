@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserDTO {//
 
-    private String firstName;
+    private String firstName;//String is unique
     private String lastName;
     private String userName;
     private String passWord;

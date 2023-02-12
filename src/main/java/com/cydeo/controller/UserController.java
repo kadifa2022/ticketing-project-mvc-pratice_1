@@ -39,7 +39,7 @@ public class UserController {
 
     //part 3 starts here
     @GetMapping("/update/{username}")
-    public String editUser(@PathVariable("username")String username, Model model){                          //user object{}, roles{}, users{}
+    public String editUser(@PathVariable("username")String username, Model model){   //from outside                       //user object{}, roles{}, users{}
         //user object ${user}
         model.addAttribute("user", userService.findById(username));
         //roles${roles}
