@@ -41,7 +41,7 @@ public class TaskController {
     public String insertTask(TaskDTO task){
         taskService.save(task);
 
-        return "redirect:/task/create";
+        return "redirect:/task/create";//after saving obj we are lending in empty form
     }
     @GetMapping("/delete/{id}")
     public String deleteTask(@PathVariable("id") Long id){

@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TaskDTO {
+
    private Long id; //if we don't have anything unique, developer has to provide based on business logic like this one Long id
 
     private ProjectDTO project;
